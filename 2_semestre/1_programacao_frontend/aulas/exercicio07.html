@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        font-family:verdana, geneva, tahoma, sans-serif;
+    }
+    header {
+        display:flex;
+        justify-content:center;
+        font-weight:bold;
+        gap:30px;
+        width:90%;
+        margin:20px auto;
+        border:1px solid black;
+    }
+    p {
+        cursor:pointer;
+    }
+    p:hover {
+        text-decoration:underline;
+    }
+    main {
+        text-align:left;
+        border:1px solid black;
+        margin:0 auto;
+        width:90%;
+        height:300px;
+    }
+</style>
+<body>
+    <header>
+        <p onclick="mostrarCurriculo(1)">Evandro Teruel</p>
+        <p onclick="mostrarCurriculo(2)">Ana Maria</p>
+        <p onclick="mostrarCurriculo(3)">Isabela</p>
+    </header>
+    <div class="2">
+    </div>
+    <div class="1">
+    </div>
+</body>
+<script>
+    function mostrarCurriculo(x) {
+        let texto
+        if (x == 1) {
+            texto = 'Evandro Professor Programação Front-end'
+        } else if (x == 2) {
+            texto = 'Ana é Engenheira'
+        } else {
+            texto = 'Isabela é Analista'
+        }
+        document.getElementsByClassName('1')[0].innerHTML= texto
+        document.getElementsByClassName('2')[1].innerHTML= texto
+
+    }
+</script>
+</html>
