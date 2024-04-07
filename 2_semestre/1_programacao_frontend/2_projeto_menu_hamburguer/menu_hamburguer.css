@@ -1,72 +1,123 @@
+/* Define que todas as margens e preenchimentos dos elementos sejam removidos */
 * {
-    margin:0;
-    padding:0;
-    list-style-type:none;
+    margin: 0;
+    padding: 0;
 }
+
+/* Define a fonte padrão para o corpo do documento */
 body {
-    font-family:verdana, geneva, tahoma, sans-serif;
-    background-color:brown;
-    padding:5px;
-    }
-    .content {
-        position: absolute;
-        left:0;
-        top:0;
-        width:100%;
-        height:100vh;
-        display:flex;
-        flex-direction:column;
-        justify-content:center;
-        align-items:center;
-        z-index:1;
-        gap:20px;
-    }
-    .icon .lines {
-        position:absolute;
-        z-index:3;
-        width:35px;
-        height:35px;
-        
-    } 
-    .lines span {
-        display:block;
-        width:35px;
-        height:5px;
-        margin-bottom:10px;
-        border-radius:5px;
-        transition:all ease .2s;
-        background-color:black;
-    }
-    #links {
-        display:flex;
-        flex-direction:column;
-        gap:10px;
-        width:200px;
-        background-color:rgb(216, 206, 206);
-        height:40vh; 
-        padding-top:90px;
-        margin-left:-300px;
-        transition:all ease .2s;
-        position:absolute;
-        top:0;
-        left:0;
-        z-index:2;
-        padding-left:20px;
-        box-sizing:border-box;
-    }
-    .icon ul {
-        margin-left:1;
-    }
-    .icon:hover {
-        cursor:pointer;
-    }
-    #links a {
-        text-decoration:none;
-        color:black;
-    }
-    #links a:hover {
-        text-decoration:underline brown;
-        font-weight:bold;
-        cursor:pointer;
-        transition:all ease 0.3s;
-    }
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Estilos para o ícone do menu */
+.icon {
+    width: 35px;
+    height: 35px;
+    /* Centraliza o conteúdo do ícone */
+    display: grid;
+    place-content: center;
+    padding: 3px;
+}
+
+/* Estilos para o ícone do menu de hambúrguer */
+.efect {
+    width: 30px;
+    height: 30px;
+    /* Centraliza as três linhas horizontais do ícone */
+    display: grid;
+    gap: 5px;
+    place-content: center;
+    /* Arredonda as bordas para criar um círculo */
+    border-radius: 50%;
+    padding: 5px;
+    /* Altera o cursor para indicar que o ícone é clicável */
+    cursor: pointer;
+}
+
+/* Estilos para as linhas horizontais do ícone do menu */
+.efect span {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    /* Arredonda as extremidades das linhas */
+    border-radius: 20px;
+}
+
+/* Estilos para o ícone do menu quando é hoverado */
+.efect:hover {
+    background-color: aliceblue;
+}
+
+/* Animação para as linhas do ícone do menu quando o menu é alternado */
+.animationX span:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+}
+
+.animationX span:nth-child(2) {
+    opacity: 0;
+}
+
+.animationX span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+}
+
+/* Estilos para o conteúdo principal da página */
+main {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    /* Centraliza o conteúdo principal */
+    display: grid;
+    place-content: center;
+    margin-top: 100px;
+}
+
+/* Estilos para o menu de navegação */
+.nav-menu {
+    position: absolute;
+    left: -30px;
+    width: 100px;
+    margin-top: 80px;
+    /* Move o menu para fora da tela inicialmente */
+    transform: translateX(-300px);
+    /* Adiciona uma transição suave ao menu */
+    transition: all ease 0.5s;
+    z-index: 1;
+}
+
+/* Classe usada para exibir o menu quando é clicado */
+.exibir {
+    transform: translateX(0);
+}
+
+/* Estilos para a lista de itens de menu */
+.nav-menu ul {
+    top: 0;
+    width: 100px;
+    margin-left: 40px;
+    list-style-type: none;
+    /* Organiza os itens de menu em uma grade */
+    display: grid;
+    grid-template-columns: 100px;
+    grid-template-rows: 30px 30px 30px 30px 30px;
+    /* Centraliza os itens de menu */
+    place-content: center;
+}
+
+/* Estilos para os itens de menu */
+.nav-menu li {
+    display: grid;
+    place-content: center;
+}
+
+/* Estilos para os links dos itens de menu */
+.nav-menu a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Estilos para os links dos itens de menu quando hoverados */
+.nav-menu a:hover {
+    color: blue;
+}

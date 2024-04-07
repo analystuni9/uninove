@@ -1,0 +1,33 @@
+/* Estilos para o cabeçalho */
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+/* Estilos para os títulos dos cardápios */
+h2 {
+    color: #666;
+    margin-top: 20px;
+}
+
+/* Estilos para as listas */
+ol, ul {
+    margin-left: 20px;
+}
+
+/* Estilos para os itens da lista */
+li {
+    margin-top: 5px;
+}
+
+/* Estilos para os detalhes */
+details {
+    margin-top: 10px;
+}
+
+/* Estilos para o sumário dos detalhes */
+summary {
+    cursor: pointer;
+    font-weight: bold;
+    color: #009688;
+}
