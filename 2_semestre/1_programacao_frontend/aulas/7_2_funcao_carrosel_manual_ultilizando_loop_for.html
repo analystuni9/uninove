@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>carrossel manual</title>
+</head>
+<body>
+    <!-- Radio buttons para selecionar o número -->
+    <input type="radio" name="numero" id="radio1" value="1">
+    <label for="radio1"></label>
+
+    <input type="radio" name="numero" id="radio2" value="2">
+    <label for="radio2"></label>
+
+    <input type="radio" name="numero" id="radio3" value="3">
+    <label for="radio3"></label>
+    
+    <input type="radio" name="numero" id="radio4" value="4">
+    <label for="radio4"></label>
+
+    <input type="radio" name="numero" id="radio5" value="5">
+    <label for="radio5"></label>
+
+    <!-- Div para exibir o número selecionado -->
+    <div>
+        <p class="exibir">1</p>
+    </div>
+
+    <script>
+        // Seleciona todos os radio buttons
+        let btninput = document.querySelectorAll("input[type='radio']");
+        // Seleciona o elemento que irá exibir o número selecionado
+        let exibir = document.querySelector('.exibir');
+        
+        // Função para atualizar o número exibido quando um radio button é clicado
+        function carrosselmanual() {
+            // Percorre todos os radio buttons
+            for (let i = 0; i < btninput.length; i++) {
+                // Verifica se o radio button atual está marcado
+                if (btninput[i].checked) {
+                    // Se estiver marcado, atualiza o número exibido com o valor do radio button
+                    let selecionenumero = btninput[i].value;
+                    exibir.innerHTML = selecionenumero;
+                }
+            }
+        }
+        
+        // Adiciona um event listener para cada radio button para chamar a função carrosselmanual quando clicado
+        for (let i = 0; i < btninput.length; i++) {
+            btninput[i].addEventListener('click', carrosselmanual);
+        }
+    </script>
+</body>
+</html>

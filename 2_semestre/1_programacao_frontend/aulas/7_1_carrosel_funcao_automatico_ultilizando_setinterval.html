@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revisão</title>
+</head>
+<body>
+    <h1>Revisão</h1>
+    <div id="container">
+        <!-- Este parágrafo irá exibir os números do array -->
+        <p class="exibir">1</p>
+    </div>
+    <script>
+        // Inicializa o índice para 0
+        let indice = 0;
+        // Array de números que serão exibidos no carrossel
+        const numeros = [1, 2, 3, 4, 5];
+        // Seleciona o elemento que irá exibir os números
+        let exibir = document.querySelector('.exibir');
+        
+        // Função que atualiza o número exibido no carrossel
+        function carrAuto() {
+            // Define o conteúdo do elemento como o número correspondente ao índice atual
+            exibir.innerHTML = numeros[indice];
+            // Incrementa o índice e faz com que ele retorne ao primeiro número se ultrapassar o limite do array
+            indice = (indice + 1) % numeros.length;
+        }
+        
+        // Chama a função carrAuto a cada 2 segundos para atualizar o número exibido
+        setInterval(carrAuto, 2000);
+    </script>
+</body>
+</html>
