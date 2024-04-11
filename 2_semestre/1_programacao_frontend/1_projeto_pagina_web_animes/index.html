@@ -10,22 +10,22 @@
     <link rel="stylesheet" href="animes.css">
 </head>
 <body>
-    <nav class="menu">
-        <ul>
-            <li><a href="#">Animes</a></li>
-            <li><a href="#">Galeria</a></li>
-            <li><a href="#">Mangá</a></li>
-            <li><a href="#">Mais</a></li>
-        </ul>
-    </nav>
-    <header>
+    <header class="hero">
+        <nav class="nav-menu1">
+            <ul class="list-menu1">
+                <li><a href="#">Animes</a></li>
+                <li><a href="#">Galeria</a></li>
+                <li><a href="#">Mangá</a></li>
+                <li><a href="#">Mais</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
         <section>
             <article>
                     <h1>Animes</h1>
-                    <nav class="menu-list">
-                        <ul>
+                    <nav class="nav-menu2">
+                        <ul class="list-menu2">
                             <li><a href="#">A</a></li>
                             <li><a href="#">B</a></li>
                             <li><a href="#">C</a></li>
@@ -60,22 +60,22 @@
                 <h2>Galeria</h2>
                 <div class="layout">
                     <div class="miniatura">
-                        <img onclick="VisualizarImagem('imagens/Dragonball.jpg')"src="imagens/Dragonball.jpg" alt="">
-                        <img onclick="VisualizarImagem('imagens/Dragonball2.jpg')"src="imagens/Dragonball2.jpg" alt="">
-                        <img onclick="VisualizarImagem('imagens/Dragonball3.jpg')"src="imagens/Dragonball3.jpg" alt="">
-                        <img onclick="VisualizarImagem('imagens/Dragonball4.jpg')"src="imagens/Dragonball4.jpg" alt="">
-                        <img onclick="VisualizarImagem('imagens/Vegeta.jpg')"src="imagens/Vegeta.jpg" alt="">
-                        <img onclick="VisualizarImagem('imagens/Naruto2.jpg')"src="imagens/Naruto2.jpg" alt="">
-                        <img onclick="VisualizarImagem('imagens/Naruto3.jpg')"src="imagens/Naruto3.jpg" alt="">
-                        <img onclick="VisualizarImagem('imagens/Naruto4.jpg')"src="imagens/Naruto4.jpg" alt="">
-                        <img onclick="VisualizarImagem('imagens/Naruto6.jpg')"src="imagens/Naruto6.jpg" alt="">
-                        <img onclick="VisualizarImagem('imagens/Naruto7.jpg')"src="imagens/Naruto7.jpg" alt="">
-                        <img onclick="VisualizarImagem('imagens/Naruto.jpg')"src="imagens/Naruto.jpg" alt="">
-                        <img onclick="VisualizarImagem('imagens/Dragonball.jpg')"src="imagens/luffy.jpg" alt="">
-                        <img onclick="VisualizarImagem('imagens/Animes.jpg')"src="imagens/Animes.jpg" alt="">
+                       <img src="imagens/Dragonball.jpg" alt="">
+                       <img src="imagens/Dragonball2.jpg" alt="">
+                       <img src="imagens/Dragonball3.jpg" alt="">
+                       <img src="imagens/Dragonball4.jpg" alt="">
+                       <img src="imagens/Banner4.webp" alt="">
+                       <img src="imagens/Banner5.jpg" alt="">
+                       <img src="imagens/Banner6.jpg" alt="">
+                       <img src="imagens/luffy.jpg" alt="">
+                       <img src="imagens/Naruto5.jpg" alt="">
+                       <img src="imagens/luffy.jpg" alt="">
+                       <img src="imagens/naruto.jpg" alt="">
+                       <img src="imagens/Naruto2.jpg" alt="">
+                       <img src="imagens/Naruto3.jpg" alt="">
                     </div>
-                    <div id="visualizar" class="visualizar">
-                        <img id="view-2" src="imagens/Dragonball.jpg" alt="" >
+                    <div id="exibir">
+                        <img id="img" src="imagens/Dragonball.jpg" alt="" >
                     </div>
                 </div>
                </div>
@@ -83,11 +83,11 @@
             <article>
                 <h2>Mangá</h2>
                 <div class="content">
-                    <img class="img" onclick="mudaTexto(1)" src="imagens/Naruto_Manga.jpg" alt="Naruto Classico">
+                    <img src="imagens/Naruto_Manga.jpg" class="img1" alt="">
                 <p>Um jovem aspirante a ninja de 12 anos, Naruto cresceu sob o desprezo dos moradores da Vila Oculta da Folha. Por este motivo, ele sonhava em crescer como ninja e em um dia se tornar Hokage, líder do local. Naruto entende que esse desafio será ainda maior do que esperava ao descobrir que é o hospedeiro de uma raposa demoníaca conhecida como Nove Caudas. Essa entidade devastou a Vila Oculta da Folha há 12 anos. Por este motivo, Naruto sempre foi tratado mal por sua aldeia.</p>
                 <p>Em sua trajetória para se tornar ninja, Naruto conhece outros jovens guerreiros. Ele passa a integrar o chamado Time 7 sob a orientação do professor Hatake Kakashi. Seus colegas de time são Sasuke Uchiha, seu rival de longa data; e Sakura Haruno, amiga por quem tinha um interesse romântico, mas que tinha sentimentos por Sasuke.</p>
                 <p>A temporada acompanha os diferentes desafios que o trio e outros estudantes precisam passar até encarar o exame chunin. Bem como o desenvolvimento da parceria ninja entre Naruto e Sasuke, que descobrem lutar bem em conjunto. Neste contexto, conhecemos os jovens Gaara do Deserto, Rock Lee, Hinata e Kabuto, este último tentando passar no exame já por diferentes vezes.</p>
-                    <img class="img-2" onclick="mudaTexto(2)" src="imagens/Naruto_Manga2.jpg" alt="Naruto Classico">
+                    <img src="imagens/Naruto_Manga2.jpg" class="img2" alt="">
                     <p>Naruto passa a treinar com o poderoso Jiraya, que vai ajudá-lo a controlar melhor seu chakra e sua relação com a Nove Caudas, ainda que isso exija medidas extremas. Kabuto e um jounin da Vila Oculta da Areia planejam uma invasão da Vila da Folha pelas da Areia e do Som. Os finalistas do exame chunin seguem treinando.</p>
                     <p>As semelhanças entre o passado de Gaara e Naruto são reveladas. Contudo, o caminho que Gaara seguiu é bem mais sombrio, com o jovem ninja acreditando que seu único propósito é matar aqueles que atrapalhem seus objetivos. As batalhas do exame chunin seguem, com o aguardado confronto entre Sasuke e Gaara. A batalha, porém, é interrompida por Orochimaru e Kabuto, que dão início à invasão da Vila Oculta da Folha.</p>
                     <p>Orochimaru captura o Terceiro Hokage, e uma luta incomparável tem início. Sasuke procura por Gaara, enquanto Sakura, Naruto e Shikamaru tentam alcançá-lo e pará-lo. Lutas se espalham por toda a aldeia, que parece estar sendo destruída. Konohamaru evacua a escola. Agora é Naruto e Gaara que estão frente à frente, e ambos usam os poderes das bestas de caudas que carregam.</p>
@@ -104,7 +104,7 @@
             </article>
         </section>
     </main>
-    <footer>Copyright © 2016</footer>
+    <footer><span>Copyright © 2016</span></footer>
     <script src="animes.js"></script>
 </body>
 </html>
