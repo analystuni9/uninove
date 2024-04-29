@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&display=swap');
+body {
+    font-family: "Poppins" Arial, Helvetica, sans-serif;
+}
+.box {
+    max-width: 1080px;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    margin: 0 auto;
+    padding: 0 5px;
+    overflow-x: scroll;
+    /* border: 1px solid black; */
+}
+
+.box-cards {
+    display: flex;
+    gap: 30px;
+    padding: 30px 0;
+}
+
+.card {
+    width: 500px;
+    height: 550px;
+    padding: 10px 20px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: #1f262c;
+    background-color: #1f262c;
+    /* border-radius: 20px; */
+    box-shadow: 5px 5px 5px rgb(49, 48, 48);
+    /* border: 1px solid black; */
+}
+
+.card ul {
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    /* background-color:#1f262c; */
+    background-color: #1f262c;
+    /* color: white; */
+    color: white;
+    text-align: left;
+    /* border: 1px solid red; */
+}
+
+.card li {
+    width: 100%;
+    text-indent: 20px;
+    padding: 5px 0;
+    list-style-type: disc;
+    list-style-position: outside;
+    box-sizing: border-box;
+}
+
+.card_title {
+    display: flex;
+    flex-flow: column wrap;
+    padding: 5px;
+    height: 100px;
+    text-align: center;
+    background-color: #1f262c;
+    /* background-color: #1f262c; */
+    /* color: white; */
+    color: white;
+    /* border: 1px solid black; */
+
+}
+
+.card_title h2 {
+    padding: 5px;
+    font-size: 35px;
+    line-height: 1.1;
+}
+
+.card_mensal {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border:1px solid black; */
+}
+
+.card_mensal h3 {
+    font-size: 20px;
+}
+
+.card h4 {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.card_preco_1 {
+    width: 100%;
+    font-size: 55px;
+    color: rgb(255, 165, 0);
+    text-shadow: 1px 1px 1px black;
+}
+
+.x1 {
+    border-bottom: 4px solid rgb(255, 165, 0);
+}
+
+.card_preco_2 {
+    font-size: 55px;
+    color: rgb(26, 75, 235);
+    text-shadow: 1px 1px 1px black;
+}
+
+.x2 {
+    border-bottom: 4px solid rgb(26, 75, 235);
+}
+
+.card_preco_3 {
+    font-size: 55px;
+    color: rgb(247, 0, 255);
+    text-shadow: 1px 1px 1px black;
+}
+
+.x3 {
+    border-bottom: 4px solid rgb(247, 0, 255);
+}
+
+.card_preco_4 {
+    font-size: 55px;
+    color: rgb(0, 128, 0);
+    text-shadow: 1px 1px 1px black;
+}
+
+.x4 {
+    border-bottom: 4px solid rgb(0, 128, 0);
+}
+
+.card_preco_5 {
+    font-size: 55px;
+    color: rgb(140, 58, 207);
+    text-shadow: 1px 1px 1px black;
+}
+
+.x5 {
+    border-bottom: 4px solid rgb(140, 58, 207);
+
+}
+
+h3.card_preco_6 {
+    font-size: 45px;
+    color: rgb(255, 0, 0);
+    text-shadow: 1px 1px 1px black;
+
+}
+
+.x6 {
+    border-bottom: 4px solid rgb(255, 0, 0);
+
+}
+
+.y1 li::marker {
+    color: rgb(255, 165, 0);
+}
+
+.y2 li::marker {
+    color: rgb(26, 75, 235);
+}
+
+.y3 li::marker {
+    color: rgb(247, 0, 255);
+}
+
+.y4 li::marker {
+    color: rgb(0, 128, 0);
+}
+
+.y5 li::marker {
+    color: rgb(140, 58, 207);
+}
+
+.y6 li::marker {
+    color: rgb(255, 0, 0);
+}
+
+.btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    margin-top: 5px 0;
+    /* border: 1px solid black; */
+}
+
+.btn a {
+    text-decoration: none;
+    padding: 6px 10px;
+    color: white;
+    font-size: 18px;
+    background-color: rgb(255, 47, 92);
+    border-radius: 5px;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+}
+
+.btn a:hover {
+    background: transparent;
+    outline: 2px solid rgb(255, 47, 92);
+}
+
+.btn-enter {
+    font-weight: bold;
+}
+
+::-webkit-scrollbar {
+    width: 1px;
+    height: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(94, 93, 93);
+    border-radius: 20px;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+
+h1 {
+    max-width: 1080px;
+    width: 95%;
+    color:  rgb(19, 19, 19);
+    text-align: center;
+    font-size: 50px;
+    padding: 10px;
+    font-weight: bold;
+    /* text-shadow: 1px 1px 1px black; */
+}
+
+.k1 {
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 0;
+}
+
+.k2 {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.k3 {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.k4 {
+    display: flex;
+    flex-flow: column nowrap;
+}
+

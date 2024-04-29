@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&display=swap');
+* {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    font-family: "Poppins" Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+article:nth-child(1),
+article:nth-child(2), 
+article:nth-child(3), 
+article:nth-child(4){
+    max-width: 1080px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.imagem-empresa img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    float:left;
+    margin:20px;
+}
+
+.conteudo-empresa p {
+    margin-bottom: 20px;
+}
+
+.lermais {
+    text-align: left;
+}
+
+.btn-lermais {
+    background-color:  rgb(255, 47, 92);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-lermais:hover {
+    background-color:  rgb(206, 8, 51);
+}
+
+.imagem-tecnologias img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+.conteudo-tecnologias p, .texto_2 p {
+    margin-bottom: 10px;
+}
+
+.conteudo-tecnologias ul, .texto_2 ul {
+    margin-bottom: 20px;
+}
+
+.conteudo-tecnologias li, .texto_2 li {
+    margin-bottom: 5px;
+}
+
+.texto, 
+.texto_2 {
+    display: none;
+}
+
+.adicionar, 
+.adicionar_2 {
+    display: block;
+}
+.btn-lermais_2 {
+    background-color:  rgb(255, 47, 92);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-lermais_2:hover {
+    background-color:  rgb(206, 8, 51);
+}
+
+main h2, h3 {
+    color:  rgb(37, 34, 34);
+    font-weight:bold;
+    margin-bottom:20px;
+}
+.all-cards {
+    /* border: 1px solid red; */
+}
+
+.imagem-iot img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.conteudo-iot h3 {
+    margin-top: 20px;
+}
+
+.conteudo-iot p {
+    margin-bottom: 15px;
+}
+/* Estilos para os cards de equipe (card-equipe-1 a card-equipe-9) */
+.card-equipe-1,
+.card-equipe-2,
+.card-equipe-3,
+.card-equipe-4,
+.card-equipe-5,
+.card-equipe-6,
+.card-equipe-7,
+.card-equipe-8,
+.card-equipe-9 {
+    width: 350px;
+    height: 440px;
+    background-repeat: no-repeat;
+    background-image: url(imagens/background-01.png);
+    padding-top: 120px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    border-radius: 10px;
+    margin: 0 auto 50px auto;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 5px 5px 10px black;
+}
+
+/* Estilos para cards de equipe individuais */
+.card-equipe-2 {
+    background-image: url(imagens/background-02.png);
+}
+
+.card-equipe-3 {
+    background-image: url(imagens/background-03.png);
+}
+
+.card-equipe-4 {
+    background-image: url(imagens/background-04.png);
+}
+
+.card-equipe-5 {
+    background-image: url(imagens/background-05.png);
+}
+
+.card-equipe-6 {
+    background-image: url(imagens/background-06.png);
+}
+
+.card-equipe-7 {
+    background-image: url(imagens/background-07.png);
+}
+
+.card-equipe-8 {
+    background-image: url(imagens/background-08.png);
+}
+
+.card-equipe-9 {
+    background-image: url(imagens/background-09.png);
+}
+
+/* Estilos para a imagem do perfil */
+.imagem-perfil img {
+    width: 80px;
+    border-radius: 50%;
+}
+
+/* Estilos para o conteúdo dos cards de equipe */
+.conteudo-equipe {
+    width: 300px;
+    height: 200px;
+    color: black;
+    text-align: center;
+    padding:0;
+    margin-top:10px;
+    /* Comentei a borda que foi originalmente desativada */
+    /* border: 1px solid black; */
+}
+.conteudo-equipe ul {
+    list-style-type: none;
+}
+/* Estilos para o título do conteúdo de equipe */
+.conteudo-equipe h3 {
+    color: rgb(255, 47, 92);
+    font-size: 22px;
+    text-shadow: 1px 1px 1px black;
+}
+
+/* Estilos para o contêiner que envolve todos os cards de equipe */
+.all-cards {
+    width: 95%;
+    margin: 0 auto;
+    height: 470px;
+    display: flex;
+    gap: 40px;
+    /* Comentei a borda que foi originalmente desativada */
+    /* border: 1px solid black; */
+    overflow-x: scroll;
+    /* flex-wrap:wrap; */
+}
+
+/* Estilos para o contêiner que envolve os botões dos links */
+.action-equipe {
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding-left: 30px;
+    /* Comentei a borda que foi originalmente desativada */
+    /* border: 1px solid black; */
+    opacity: 0;
+}
+
+/* Estilos para os botões dos cards de equipe */
+.action-equipe i {
+    width: 100%;
+    font-size: 20px;
+    height: auto;
+    color: black;
+    padding: 3px;
+}
+
+/* Efeito ao passar o mouse sobre a área de ação */
+.action-equipe:hover {
+    opacity: 1;
+}
+
+/* Efeito ao passar o mouse sobre os botões de ação */
+.action-equipe i:hover {
+    color: #ff2f5c;
+    text-decoration: underline gray;
+    transition: all 1s ease;
+    cursor: pointer;
+    transition: all 1s ease;
+}
+::-webkit-scrollbar {
+    width: 1px;
+    height: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(94, 93, 93);
+    border-radius: 20px;
+}
